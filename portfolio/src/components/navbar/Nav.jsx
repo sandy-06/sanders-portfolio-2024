@@ -1,21 +1,31 @@
-import React from "react";
-import { scroller } from "react-scroll"; // Add this line to import the 'scroller' module
+// import React from "react";
+
 
 import "./Nav.css";
 
 export default function Nav() {
   return (
-    <div className="nav">
-      <div className="nav-container ">
-        <h1>Sandra</h1>
-        <ul className="list">
-          <button onClick={() => {}}  >About</button>
-          <button onClick={() => {}}>contact</button>
-          <button>education</button>
-            <button>projects</button>
-            <button>skills</button>
+  <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div className="container-fluid">
+      <hi>Sandra Sanders</hi>
+      <div className="collapse navbar-collapse" id="navbarScroll">
+        <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="#">About</a></li>
+              <li><a className="dropdown-item" href="#">Contact</a></li>
+              <li><a className="dropdown-item" href="#">Education</a></li>
+              <li><a className="dropdown-item" href="#">Projects</a></li>
+              <li><a className="dropdown-item" href="#">Skills</a></li>
+            </ul>
+          </li>
         </ul>
+        
       </div>
     </div>
-  );
+  </nav>
+    );  
 }
